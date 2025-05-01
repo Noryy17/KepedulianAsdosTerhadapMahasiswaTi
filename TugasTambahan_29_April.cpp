@@ -2,7 +2,7 @@
 using namespace std;
 
 class Segitiga {
-private: // Private ini untuk melindungi data agar tidak mudah diakses...(sejujurnya saya masih memahami lebih mendalam tapi saya masih kesusahan)
+private: // Private ini untuk melindungi data agar tidak mudah diakses...(sejujurnya saya masih memahami lebih mendalam tapi saya masih kesusahan,kalo saya nangkapnya kenapa bisa diakses sama yang lain itu karena masih satu class dengan private untuk saat ini saya nangkap pehamananya seperti itu aja kayak jadinya sudah diberikan izin sama clas private makannya bisa diakses sama yang lain)
       //Kenapa Intijer?  ini memanggil bilangan bulat
     int sisi1, sisi2, sisi3, alas, tinggi; // Properti privat hanya bisa diakses oleh fungsi dalam kelas
                     //Kenapa Float? digunakan untuk menyimpan bilangan desimal atau angka pecahan. 
@@ -84,8 +84,8 @@ int main() { // Int main ini penting banget karena akan dijalankan disini ya mai
 
     switch (pilihan) { //tempat memilih pilihan case jadi kayak menjalankan case perintah case misal saya memasukkan 2 kedalam cin maka case 2 akan dijalankan sesuai pemrograman.
     case 1:
-    sgt.inputLuas();
-    sgt.outputLuas();
+    sgt.inputLuas(); //kalo saya tadi nyoba pake cara ini bisa kalo cuman manggil inputLuas kan sudah di acc sama clas private yang diatas tapi kalo langsung manggil hitungLuas sama hitungKeliling maka private dan tidak bisa
+    sgt.outputLuas(); //bahasa yang mudah dimengerti mungkin mereka bisa diakses karena lewat orang dalam gitu...masih bingung juga kak tapi mau belajar biar bisa...
         break;
     case 2:
     sgt.inputKeliling();
