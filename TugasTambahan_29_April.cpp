@@ -2,19 +2,19 @@
 using namespace std;
 
 class Segitiga {
-private:
+private: // Private ini untuk melindungi data agar tidak mudah diakses...(sejujurnya saya masih memahami lebih mendalam tapi saya masih kesusahan)
       //Kenapa Intijer?  ini memanggil bilangan bulat
     int sisi1, sisi2, sisi3, alas, tinggi; // Properti privat hanya bisa diakses oleh fungsi dalam kelas
                     //Kenapa Float? digunakan untuk menyimpan bilangan desimal atau angka pecahan. 
     float hitungLuas() {
-        (alas * tinggi) / 2; //Rumus Menghitung luas segitiga
+        return (alas * tinggi) / 2; //Rumus Menghitung luas segitiga
     }
 
     float hitungKeliling() {
-         sisi1 + sisi2 + sisi3; // Menghitung keliling segitiga
+        return  sisi1 + sisi2 + sisi3; // Menghitung keliling segitiga
     }
 
-public:
+public: // public bisa dianggap anggota dapat diakses dari luar kelas atau bebas akses kayak fasilitas public
     void inputLuas() {
        do { //Untuk Perulangan jika Kondisi gagal di esekusi atau Eror.Seperti Melanggar Suatu ketentuan dalam perintah
         cout << "Masukkan Alas Segitiga (1 - 50, GENAP ) = ";
